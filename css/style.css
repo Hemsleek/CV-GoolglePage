@@ -1,0 +1,95 @@
+html , body{
+    margin:0;
+    padding:0;
+
+}
+:root{
+    font-size:16px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+a{
+    text-decoration: none;
+}
+
+/*
+ HELPER STYLES START
+====================
+*/
+
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex.justify-center{
+    justify-content: center;
+}
+.flex.justify-between{
+    justify-content: space-between;
+}
+.flex.align-center{
+    align-items: center;
+}
+.flex.justify-end{
+    justify-content:flex-end;
+}
+
+/*
+ HELPER STYLES END
+====================
+*/
+#main-content{
+    height:88vh;
+    
+}
+#navbar{
+    cursor: pointer;
+    height: 64px;
+    color: #858585;
+}
+#navbar a{
+    margin-right:1rem;
+}
+#navbar img{
+    margin-right: 1rem;
+}
+.user{
+    border-radius: 100%;
+    background-color: #8D6E63;
+    color:#FAF8F8;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+footer{
+    height: 12vh;
+    background-color:#F2F2F2 ;
+    color:#000;
+}
+footer a{
+    color:#A2A2A2;   
+}
+.country{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left:1rem;
+}
+.flex-item1 a{
+    margin-left: 1rem;
+}
+.flex-item2 a{
+    margin-right: 1rem;
+}
+
