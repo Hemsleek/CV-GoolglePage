@@ -1,10 +1,11 @@
 html , body{
     margin:0;
     padding:0;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 :root{
-    font-size:16px;
+    font-size:13px;
 }
 *{
     box-sizing: border-box;
@@ -12,6 +13,10 @@ html , body{
 body{
     height: 100vh;
     background-color: #FFFFFF;
+    font-weight: 400;
+    color:#222222;
+    overflow-y: auto;
+    background-attachment: fixed;
 }
 a{
     text-decoration: none;
@@ -49,17 +54,18 @@ a:hover{
 ====================
 */
 #main-content{
-    height:88vh;
+    height:86vh;
     
 }
 #navbar{
     cursor: pointer;
     height: 64px;
-    color: #858585;
+    color: #222222;
+    
 }
 #navbar a{
-    color: #858585;
-    margin-right:1rem;
+    color: #222222;
+    margin-right:1.2rem;
 }
 #navbar img{
     margin-right: 1rem;
@@ -76,79 +82,163 @@ a:hover{
     margin-right: 1rem;
 }
 .flex-container{
-    height:95%;
+    height:80vh;
 }
 .flex-container > img{
-    margin:1rem 0;
+    margin:3.8rem auto 2.2rem ;
 
 }
 
 .search-bar{
-    width: 545px;
-    height:48px;
-    border-radius:30px;
-    border:1px #EAEBEE solid;
-    padding:.6rem;
+    position: relative;
+    width: 580px;
+    height:44px;
+    border-radius:1.85rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding:1rem;
     margin-bottom: 1rem;
-
-
+    z-index:6;
+    
+    
+}
+.search-bar > img{
+    z-index:7;
 }
 .search-bar:hover{
-    box-shadow:0 0 10px rgb(178, 180, 180) ;
+    box-shadow:0 0 2.5px #a3a0a0 ;
+    
 }
+.search-bar input:focus{ 
+    border-right: 1px #DFE1E5  solid;
+    outline: none;
+    
+}
+ /* .search-bar > .search:focus .dropdown ~ .dropdown{ 
+    
+    
+}  */
+
+
 .search-bar input{
+    z-index:4;
+    font-size:1.23rem;
     margin:0 .6rem;
     height:100%;
-    width:95%;
-    border:0;
-    outline: none;
-    border-right: 1px red solid;
+    width:100%;
+    border:none;
     padding-right: .6rem;
 }
-.options{
-    width:18.2vw;
+.dropdowns{
+    display: none;
+    background-color: white;
+    position: absolute;
+    /* padding:.8rem; */
+    top:0;
+    left:0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top:0;
+    padding:3.5rem 1rem;
+    box-shadow:0 0 2.5px #a3a0a0 ;
+    width:100%;
+    border-radius: 1.1rem;
+    height:500px;
+    z-index:3;
+}
+.dropdown{
+    
     display:flex;
-    align-items: center;
+    align-items: center; 
+    margin-bottom: .5rem; 
     justify-content: space-between;
+    padding:.5rem 0;
 
 }
+.dropdown:first-child{
+    border-top:1px rgba(0, 0, 0, 0.2) solid;
+    
+}
+.dropdown img{
+    margin-right:.6rem;
+}
+.dropdown:hover{
+    background-color: #f2f2f2;
+}
+.dropdown .suggestion{
+    font-size:1.08rem;
+    flex-grow:1;
+}
+.dropdown .remove{
+    color:#8D8D8D;
+    font-size:1.08rem;
+}
+.search-bar input:focus + .dropdowns{
+    display: block;
+
+}
+.options{
+    display:flex;
+    align-items: center;
+    color:#A0A0A0;
+    font-size:1.2rem;
+    cursor: pointer;
+    margin:1.05rem auto 1.8rem;
+}
+.options button:first-child{
+    margin-right:.6rem;
+}
 .options button{
-   padding: .3rem .5rem;
-   border:0;
+   font-size:1.1rem;
+   padding: .6rem 1rem;
+   border:none;
    background-color: #F2F2F2;
    color:#A2A2A2;
 
 }
 .options button:hover{
     border: 1px #A2A2A2 solid;
-    color:black;
- 
+    color:#222;
  }
+ .auto-del img{
+    height:3.4rem;
+    width: 3.4rem;
+ }
+ 
 .languages{
-    width:30vw;
+    width:26vw;
+    margin:3.4rem auto .1rem;
 }
+
 footer{
-    height: 12vh;
+    position: fixed;
+    width:100vw;
+    bottom:0;
+
+    height: 14vh;
     background-color:#F2F2F2 ;
-    color:#A2A2A2;
+    color:#8D8D8D;
+    font-size: 1.1rem;
+    padding:0 1rem ;
+    
 }
 footer a{
-    color:#A2A2A2;   
+    color:#8D8D8D;   
 }
 .country{
     height: 50%;
     display: flex;
     align-items: center;
     justify-content: start;
-    padding-left: 1rem;
-    border-top: 1px #A2A2A2 solid ;
-    border-bottom: 1px #A2A2A2 solid ;
+    padding-left: 1.5rem;
+    border-top: 1px #DFE1E5 solid ;
+    border-bottom: 1px #DFE1E5 solid ;
 }
-
+.bottom-nav{
+    height:50%;
+}
 .flex-item1 a{
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 .flex-item2 a{
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
 
