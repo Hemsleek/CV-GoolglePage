@@ -1,4 +1,4 @@
-# Google HomePage
+# Scouring
 Scouring is an implementation of Google HomePage User Interface.
 ## Getting started
 clone or download this repository ,run the `index.html` with favourite browser.
