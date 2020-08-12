@@ -3,7 +3,7 @@ Scouring is an implementation of Google HomePage User Interface.
 ## Getting started
 clone or download this repository ,run the `index.html` with favourite browser.
 ## Preview
-[Demo](https://mb-fcc-portfolio.netlify.app/)
+[Demo](https://scouring.netlify.app/)
 ## Prerequisite
 Browser version must be recent for better experience.
 ## Features
